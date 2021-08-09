@@ -1,0 +1,37 @@
+/* seccion 404.html */
+.section404error {
+  background-color: #ececec; }
+
+/*grilla index*/
+.container-fluid {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-template-rows: 1fr 1fr 1fr 1fr 1fr 1fr;
+  gap: 10px 5px;
+  text-align: center;
+  justify-content: stretch;
+  grid-template-areas: "logo nav nav" "carousel carousel carousel" ". tituloPrincipal ." "section1 . section2" "section1 . section2" "footer footer footer"; }
+
+.logo {
+  grid-area: logo; }
+
+.nav {
+  grid-area: nav; }
+
+.carousel {
+  grid-area: carousel; }
+
+.tituloPrincipal {
+  grid-area: tituloPrincipal; }
+
+.section1 {
+  grid-area: section1; }
+
+.section2 {
+  grid-area: section2; }
+
+.footer {
+  grid-area: footer; }
+
+body {
+  background-color: white; }

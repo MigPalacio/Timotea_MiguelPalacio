@@ -1,0 +1,13 @@
+@import "sections";
+@import "grids";
+@import "fonts";
+
+//variables
+$color1: white;
+$color2: black;
+$color3: gray;
+
+
+body {
+    background-color: $color1;
+}
