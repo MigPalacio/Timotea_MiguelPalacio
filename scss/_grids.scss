@@ -1,27 +1,58 @@
 /*grilla index*/
 
 .container-fluid {
-  display: grid; 
-  grid-template-columns: 1fr 1fr 1fr; 
-  grid-template-rows: 1fr 1fr 1fr 1fr 1fr 1fr; 
-  gap: 10px 5px;
-  text-align: center;
-  justify-content: stretch; 
-  grid-template-areas: 
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-template-rows: 1fr 1fr 1fr 1fr 1fr 1fr;
+  gap: 10px 5px;;
+  grid-auto-flow: row;
+  grid-template-areas:
     "logo nav nav"
     "carousel carousel carousel"
-    ". tituloPrincipal ."
+    "tituloPrincipal tituloPrincipal tituloPrincipal"
     "section1 . section2"
     "section1 . section2"
-    "footer footer footer"; 
+    "footer footer footer";
 }
-.logo {
-    grid-area: logo;
+
+.logo { 
+  grid-area: logo;
+  background-color: gray;
 
 }
-.nav { grid-area: nav; }
-.carousel { grid-area: carousel; }
-.tituloPrincipal { grid-area: tituloPrincipal; }
-.section1 { grid-area: section1; }
-.section2 { grid-area: section2; }
-.footer { grid-area: footer; }
+
+.nav {
+  grid-area: nav;
+  background-color: black;
+}
+
+.carousel {
+  grid-area: carousel;
+  background-color: violet;
+}
+
+.tituloPrincipal {
+  grid-area: tituloPrincipal;
+  background-color: black;
+  color: white;
+  text-transform: uppercase;
+  text-align: center;
+}
+
+.section1 {
+  grid-area: section1;
+  background-color: blue;
+  align-self: center;
+  justify-self: center;
+}
+
+.section2 { 
+  grid-area: section2;
+  background-color: green;
+}
+
+.footer { 
+  grid-area: footer;
+  background-color:black;
+  color: white;
+}

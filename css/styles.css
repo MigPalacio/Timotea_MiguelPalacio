@@ -8,30 +8,40 @@
   grid-template-columns: 1fr 1fr 1fr;
   grid-template-rows: 1fr 1fr 1fr 1fr 1fr 1fr;
   gap: 10px 5px;
-  text-align: center;
-  justify-content: stretch;
-  grid-template-areas: "logo nav nav" "carousel carousel carousel" ". tituloPrincipal ." "section1 . section2" "section1 . section2" "footer footer footer"; }
+  grid-auto-flow: row;
+  grid-template-areas: "logo nav nav" "carousel carousel carousel" "tituloPrincipal tituloPrincipal tituloPrincipal" "section1 . section2" "section1 . section2" "footer footer footer"; }
 
 .logo {
-  grid-area: logo; }
+  grid-area: logo;
+  background-color: gray; }
 
 .nav {
-  grid-area: nav; }
+  grid-area: nav;
+  background-color: black; }
 
 .carousel {
-  grid-area: carousel; }
+  grid-area: carousel;
+  background-color: violet; }
 
 .tituloPrincipal {
-  grid-area: tituloPrincipal; }
+  grid-area: tituloPrincipal;
+  background-color: black;
+  color: white;
+  text-transform: uppercase;
+  text-align: center; }
 
 .section1 {
-  grid-area: section1; }
+  grid-area: section1;
+  background-color: blue; }
 
 .section2 {
-  grid-area: section2; }
+  grid-area: section2;
+  background-color: green; }
 
 .footer {
-  grid-area: footer; }
+  grid-area: footer;
+  background-color: black;
+  color: white; }
 
 body {
   background-color: white; }
