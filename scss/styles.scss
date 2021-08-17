@@ -1,6 +1,13 @@
+*{
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+}
+
 @import "sections";
 @import "grids";
 @import "fonts";
+@import "footer";
 
 //variables
 $color1: white;
@@ -10,4 +17,25 @@ $color3: gray;
 
 body {
     background-color: $color1;
+}
+.tituloPrincipal {
+    background-color: $color2;
+    color: $color1;
+    text-align: center;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+}
+.nav-link active, .nav-link {
+    background-color: gray;
+    color: black;
+    font-size: 1.2rem;
+}
+
+
+p {
+    font-family: 'Roboto', sans-serif;
+    font-weight: bold;
+    font-size: 2rem;
+    text-align: center;
+    text-shadow: 2px 2px 5px grey;
 }

@@ -1,58 +1,101 @@
 /*grilla index*/
+@import "fonts";
 
 .container-fluid {
   display: grid;
   grid-template-columns: 1fr 1fr 1fr;
-  grid-template-rows: 1fr 1fr 1fr 1fr 1fr 1fr;
-  gap: 10px 5px;;
+  grid-template-rows: 1fr;
+  gap: 1px 1px;
+  padding: 1rem;
   grid-auto-flow: row;
   grid-template-areas:
     "logo nav nav"
     "carousel carousel carousel"
-    "tituloPrincipal tituloPrincipal tituloPrincipal"
-    "section1 . section2"
-    "section1 . section2"
+    ". tituloPrincipal ."
+    "section1 section1 section1"
+    "section2 section2 section2"
     "footer footer footer";
 }
 
-.logo { 
-  grid-area: logo;
-  background-color: gray;
+.logo {
 
+  justify-self: start;
+  align-self: start;
+  align-content: initial;
+  grid-area: logo;
 }
 
 .nav {
+
+  justify-self: center;
+  align-self: center;
   grid-area: nav;
-  background-color: black;
 }
 
 .carousel {
+
   grid-area: carousel;
-  background-color: violet;
+  align-content: stretch;
+
 }
 
 .tituloPrincipal {
+
+  align-self: center;
   grid-area: tituloPrincipal;
-  background-color: black;
-  color: white;
-  text-transform: uppercase;
-  text-align: center;
 }
 
 .section1 {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-template-rows: 1fr;
+  gap: 0px 0px;
+  padding: 1rem;
+  grid-auto-flow: row;
+  grid-template-areas:
+    "img1 text1 text1";
   grid-area: section1;
-  background-color: blue;
-  align-self: center;
+}
+
+.img1 {
+
   justify-self: center;
+  align-self: center;
+  grid-area: img1;
+  text-shadow: 2px 2px 5px grey;
 }
 
-.section2 { 
+.text1 {
+
+  justify-self: start;
+  align-self: center;
+  grid-area: text1;
+}
+
+.section2 {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-template-rows: 1fr;
+  gap: 0px 0px;
+  grid-auto-flow: row;
+  padding: 1rem;
+  grid-template-areas:
+    "text2 text2 img2";
   grid-area: section2;
-  background-color: green;
 }
 
-.footer { 
-  grid-area: footer;
-  background-color:black;
-  color: white;
+.img2 {
+
+  justify-self: center;
+  align-self: center;
+  grid-area: img2;
+  box-shadow: 2px 2px 5px grey;
+}
+
+.text2 {
+
+  justify-self: end;
+  align-self: center;
+  font-style: $fontContent;
+  grid-area: text2;
 }

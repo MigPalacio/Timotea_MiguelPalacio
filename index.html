@@ -12,6 +12,9 @@
     <link rel="stylesheet" href="css/bootstrap.min.css">
 <!--fonts-->
     <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Barlow:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&amp;family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&amp;display=swap">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">
 <!--css local-->
     <link rel="stylesheet" href="css/styles.css">
 </head>
@@ -20,48 +23,164 @@
     <div class="container-fluid">
 <!--logo-->
         <div class="logo">
-            <div>
-                <img src="../Timotea_MiguelPalacio/assets/img/logo/logo.jpg" alt="logo" width="200px">
-            </div>
+            <img src="../Timotea_MiguelPalacio/assets/img/logo/logo.jpg" alt="logo" width="200px">
         </div>
 <!--navbar-->
         <div class="nav">
-        
+            <ul class="nav nav-pills nav-justified">
+                <li class="nav-item">
+                    <a class="nav-link" aria-current="page" href="../Timotea_MiguelPalacio/index.html">Home</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="../Timotea_MiguelPalacio/sections/productos.html">Productos</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="../Timotea_MiguelPalacio/sections/promociones.html">Promociones</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="../Timotea_MiguelPalacio/sections/nosotros.html">Nosotros</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="../Timotea_MiguelPalacio/sections/contacto.html">Contacto</a>
+                </li>
+            </ul>
         </div>
-<!--carousel-->
+<!--aca va el carousel-->
         <div class="carousel">
-        
+                        <div id="carouselExampleFade" class="carousel slide carousel-fade" data-bs-ride="carousel">
+                <div class="carousel-inner">
+                <div class="carousel-item active">
+                    <img src="../Timotea_MiguelPalacio/assets/img/carousel/carousel1.jpg" class="d-block w-100" alt="carousel1">
+                </div>
+                <div class="carousel-item">
+                    <img src="../Timotea_MiguelPalacio/assets/img/carousel/carousel2.jpg" class="d-block w-100" alt="carousel2">
+                </div>
+                <div class="carousel-item">
+                    <img src="../Timotea_MiguelPalacio/assets/img/carousel/carousel2.jpg" class="d-block w-100" alt="carousel3">
+                </div>
+                </div>
+                <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleFade" data-bs-slide="prev">
+                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Previous</span>
+                </button>
+                <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleFade" data-bs-slide="next">
+                <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Next</span>
+                </button>
+            </div>
         </div>
-        
-<!--tituloprincipal-->
+        </div>
         <div class="tituloPrincipal">
-            <div>
-                <h1 class="animate__animated animate__heartBeat">¡compra online y recibi tu producto donde quieras!</h1>
-            </div>
+            <h1>¡compra online y recibi tu producto donde quieras!</h1>
         </div>
-<!--section1-->
         <div class="section1">
-            <div>
-                <img src="" alt="imgSec1">
+            <div class="img1">
+                <img src="../Timotea_MiguelPalacio/assets/img/sectionIndex/section1.jpg" alt="imgSection1" width="300px">
             </div>
-            <div>
-                <p>section1</p>
-            </div>
+        <div class="text1">
+            <p>Nos encanta ser el color y la calidez del hogar. Amamos la decoración, la gastronomía, lo vintage! reciclamos, pintamos y creamos sin límites!</p>
         </div>
-<!--section2-->
+        </div>
         <div class="section2">
-            <div>
-                <img src="" alt="imgSec2">
+            <div class="img2">
+                <img src="../Timotea_MiguelPalacio/assets/img/sectionIndex/section2.jpg" alt="imgSection2" width="300px">
             </div>
-            <div>
-                <p>section2</p>
-            </div>
+        <div class="text2">
+            <p>Las velas más lindas pero además las más deliciosas! Son de soja y tienen las esencias más mágicas del condado! 🔥🔥🔥</p>
         </div>
-<!--footer-->
+        </div>
+<!--footer-->        
         <div class="footer">
-            <div>
-                <p>qui! Magni corrupti debitis nulla?</p>
+<!--sitemap-->
+            <div class="footer-sitemap">
+<!--sitemap seccion about-->
+                <div class="footer-seccion about">
+                    <img src="../Timotea_MiguelPalacio/assets/img/logo/logo-sinfondo.png" alt="logo-footer" width="200px">
+                    <h4>Una empresa familiar, desde el año 2004</h4>
+                    <br>
+<!--sitemap social media-->
+                    <h4>Seguinos</h4>   
+                    <ul>
+                        <li>
+                            <a href="https://es-la.facebook.com/timodeco/">Facebook</a>
+                        </li>
+                        <li>
+                            <a href="https://www.instagram.com/timotea_deco/?hl=es-la">Instagram</a>
+                        </li>
+                        <li>
+                            <a href="https://timoteadeco.mitiendanube.com/">Tienda nube</a>
+                        </li>
+                    </ul>
+                </div>
+<!--sitemap seccion contenido-->
+                <div class="footer-seccion contenido">
+                    <h2>Contenido</h2>
+                    <br>
+                    <ul>
+                        <a href="../Timotea_MiguelPalacio/index.html"><li>Home</li></a>
+                        <a href="../Timotea_MiguelPalacio/sections/productos.html"><li>Productos</li></a>
+                        <a href="../Timotea_MiguelPalacio/sections/promociones.html"><li>Promociones</li></a>
+                        <a href="../Timotea_MiguelPalacio/sections/nosotros.html"><li>Nosotros</li></a>
+                        <a href="../Timotea_MiguelPalacio/sections/contacto.html"><li>Contacto</li></a>
+                    </ul>
+                </div>
+<!--sitemap seccion contacto-->
+                <div class="footer-seccion contacto">
+                    <h2>Contacto</h2>
+                    <p>Tel: +54 11 5053-8882</p>
+                    <h4>Dejanos tu mensaje</h4>
+                    <form action="index.html" method="post">
+                        <input type="email" name="email" class="text-input contact-input" placeholder="Email...">
+                        <textarea name="Mensaje" class="text-input contact-input" placeholder="Tu mensaje..."></textarea>
+                    <button type="submit" class="btn btn-big btn-contacto">
+                    <i class="fas fa-envelope"></i>
+                    Enviar
+                    </button>
+                    </form>
+<!--pie de pagina-->
+                    <div class="footer-bottom">
+                        &copy; 2021 - 2022 | TIMOTEA DECO. Todos los derechos reservados.
+                    </div>
+                </div>
             </div>
+
+<!--                    <ul class="nav flex-column">
+                    <li class="nav-item">
+                        <a class="nav-link active" aria-current="page" href="../Timotea_MiguelPalacio/index.html">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="../Timotea_MiguelPalacio/sections/productos.html">Productos</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Link</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#" tabindex="-1" aria-disabled="true">Disabled</a>
+                    </li>
+                </ul>
+            </div>
+            <div>
+                <p>Redes Sociales</p>
+                <ul class="nav flex-column">
+                    <li class="nav-item">
+                        <a class="nav-link active" aria-current="page" href="../Timotea_MiguelPalacio/index.html">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="../Timotea_MiguelPalacio/sections/productos.html">Productos</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Link</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#" tabindex="-1" aria-disabled="true">Disabled</a>
+                    </li>
+                </ul>
+            </div>
+        </div>-->
+<!--pie de pagina-->
+        <div class="piePagina">
+            <h6>2022 | TIMOTEA DECO. Todos los derechos reservados.<h6>
+        </div>
         </div>
     </div>
 <!--js-->
