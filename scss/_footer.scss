@@ -1,5 +1,5 @@
 .footer{
-    background-color:rgb(180, 180, 180);
+    background-color:rgb(153, 153, 153);
     color: white;
     height: 400px;
     position: relative;
@@ -14,62 +14,92 @@
     padding: 25px;
 }
 
-.footer-sitemap h1,
-.footer-sitemap h2{
-    color: white;
-}
-
-.footer .footer-sitemap .about .contact span{
-    display: block;
-    font-size: 0.8rem;
-    margin-bottom: 8px;
-    transition: all .3s;
-}
-
-
-
+/*listado contenido footer*/
 .footer .footer-sitemap .contenido ul a{
+    color: black;
     text-decoration: none;
+    list-style: none;
     display: block;
     margin-bottom: 10px;
-    font-size: 1rem;
+    font-size: 1.2rem;
+    font-style: bold;
 }
+/*efecto listado contenido footer*/
 .footer .footer-sitemap .contenido ul a:hover {
+    text-decoration: none;
     color: white;
     margin-left: 15px;
     transition: all .3s;
 }
 
-.footer .footer-sitemap .contacto .contact-input {
+.footer .footer-sitemap .contacto .contact-inputMail {
+    text-decoration: none;
     background: #272727;
     color: white;
-    margin-bottom: 10px;
-    line-height: 3rem;
-    padding: .9rem 1.4rem;
-    border: none;  
+    border: none;
+    margin-bottom: .7rem;
+    height: 40px;
+    width: 400px;
 }
 
-.footer .footer-sitemap .contacto .contact-input:focus {
+/*efecto click sobre email footer contacto*/
+.footer .footer-sitemap .contacto .contact-inputMail:focus {
     background: black; 
     color:rgb(181, 182, 181);
-}
-.footer .footer-sitemap .contacto .btn-contacto {
-    float: right;
+    margin-bottom: .7rem;
 }
 
-.btn-big {
+.footer .footer-sitemap .contacto .contact-inputMensaje {
+    text-decoration: none;
+    background: #272727;
+    color: white;
+    border: none;
+    margin-bottom: .7rem; 
+}
+
+/*efecto click sobre msj footer contacto*/
+.footer .footer-sitemap .contacto .contact-inputMensaje:focus {
+    background: black; 
+    color:rgb(181, 182, 181);
+    margin-bottom: .7rem;
+}
+
+/*boton enviar footer contacto*/
+.btn-contacto {
     padding: .7 1.3rem;
     line-height: 3rem;
+    background-color: gray;
+    justify-items: center;
+    letter-spacing: 2px;
+    margin: 0 auto;
+    left: 100px;
+}
+
+
+.contact-inputMensaje {
+    height: 100px;
+    width: 400px;
+}
+
+.footer .footer-sitemap .about ul li{
+    display: inline-block;
+    padding: 0.5rem;
+
+}
+.footer .footer-sitemap .about ul li a{
+    text-decoration: none;
 }
 
 .footer .footer-bottom {
-    background-color: black;
-    color: white;
+    background-color: #272727;
+    color: white;;
+    font-size: 0.7rem;
     width: 100%;
-    height: 50px;
-    text-align: center;
+    height: 30px;
     position: absolute;
+    left: 100px;
     bottom: 0px;
     left: 0px;
-    padding-top: 20px ;
+    text-align: center;
+    padding: 10px auto 10px auto;
 }

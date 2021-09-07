@@ -1,0 +1,48 @@
+*{
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+}
+
+/* grid nosotros*/
+.containerNosotros-fluid {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 1fr;
+    gap: 1px 1px;
+    grid-auto-flow: row;
+    grid-template-areas:
+        "logo nav nav"
+        "sectionNosotros sectionNosotros sidebarNosotros"
+        "sectionNosotros sectionNosotros sidebarNosotros"
+        "sectionNosotros sectionNosotros sidebarNosotros"
+        "footer footer footer"; 
+}
+.logo { 
+    grid-area: logo; 
+}
+.navbar {
+    grid-area: navbar;
+}
+.sectionNosotros {
+    grid-area: sectionNosotros;
+    text-align: center;
+    padding: 1rem;
+}
+.sidebarNosotros {
+    grid-area: sidebarNosotros;
+    float: right;
+    background-color: black;
+    color: white;
+    width: 40%;
+    text-align: center;
+    padding: 1rem;
+    justify-content: left;
+}
+.footer { 
+    grid-area: footer; 
+}
+
+#direccionTimotea {
+    color: black;
+}

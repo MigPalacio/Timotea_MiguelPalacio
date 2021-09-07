@@ -1,0 +1,113 @@
+* {
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box; 
+}
+
+.precioOff {
+    text-decoration: line-through;
+}
+.btn{
+    text-transform: uppercase;
+    background-color: #272727;
+    border: none;
+    color: white;
+}
+.btn:hover{
+    background-color: gray;
+    border: none;
+  }
+  
+  .h1Productos {
+    background-color: black;
+    color: white;
+    text-transform: uppercase;
+    text-align: center;
+    margin-top: 1.5rem;
+    margin-bottom: 3rem;
+    padding: 1rem;
+  }
+  
+  .h2Productos{
+    background-color: rgb(207, 207, 207);
+    color: black;
+    border-top: 2px solid black;
+    border-bottom: 2px solid black;
+    text-transform: uppercase;
+    text-align: center;
+    margin-top: 1rem;
+    margin-bottom: 1rem;
+    padding: 0.5rem;
+  }
+  
+  .listaProductos{
+    list-style: none;
+    display: inline-flex;
+    margin: 1rem;
+    gap: 15px 30px;
+  
+  }
+  /*grids productos*/
+  .containerProductos-fluid {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    grid-template-rows: 1fr;
+    grid-auto-flow: row;
+    grid-template-areas:
+      "logo nav nav nav"
+      "tituloProductos tituloProductos tituloProductos tituloProductos"
+      "percheros percheros percheros percheros"
+      "escritorios escritorios escritorios escritorios"
+      "macetas macetas macetas macetas"
+      "estanterias estanterias estanterias estanterias";
+    }
+  
+  .logo { grid-area: logo; }
+  
+  .nav {
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    justify-self: center;
+    align-self: center;
+    grid-area: nav;
+  }
+  
+  .tituloProductos {
+  
+    justify-self: stretch;
+    align-self: stretch;
+    grid-area: tituloProductos;
+    letter-spacing: 3px;
+  }
+  
+  .percheros {
+    grid-area: percheros;
+    letter-spacing: 2px;
+  }
+  
+  .escritorios { 
+    grid-area: escritorios;
+    letter-spacing: 2px;
+  }
+  
+
+  .card-text-cuotas {
+    font: bold;
+    font-size: 0.5rem;
+    }
+  
+  /*media queries*/
+  
+  @media all and (max-width: 480px) {
+    nav {
+      background-color: blue;
+      flex-flow: column wrap;
+      padding: 0;
+  }
+  }
+  @media all and (max-width: 768px) {
+    nav .percheros {
+        justify-content: space-around;
+    }
+}

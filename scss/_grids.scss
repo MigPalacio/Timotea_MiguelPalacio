@@ -1,5 +1,4 @@
 /*grilla index*/
-@import "fonts";
 
 .container-fluid {
   display: grid;
@@ -96,6 +95,5 @@
 
   justify-self: end;
   align-self: center;
-  font-style: $fontContent;
   grid-area: text2;
 }
